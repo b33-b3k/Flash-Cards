@@ -1,0 +1,120 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
+}
+
+.Deck {
+   
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   padding: 20px;
+   
+
+}
+#card-text{
+    /* outer padding */
+    padding: 10px;
+    font-size: large;
+    margin: 20px;
+}
+#card-text label{
+    /* outer padding */
+   
+    font-size: large;
+}
+
+.read-the-docs {
+    color: #888;
+}
+
+.cards {
+    display: grid;
+    width: 600px;
+    margin: 0 auto;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    padding: 2 px;
+
+
+
+
+
+
+}
+#deck-title{
+    /* outer padding */
+    padding: 10px;
+}
+
+.cards li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    border: 1px solid black;
+    background: whitesmoke;
+    color: black;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 20px;
+
+
+
+}
+
+.cards li:hover {
+    background: #eeee;
+}
+
+.cards li button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    background: transparent;
+    font-size: 1.0rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}

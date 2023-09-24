@@ -1,0 +1,12 @@
+import mongoose from "mongoose";
+//  npm i --save-dev @types/mongoose
+const Schema = mongoose.Schema;
+// const ObjectId = Schema.ObjectId;
+
+const DeckSchema = new Schema({
+    title: String,
+    cards: [String],
+});
+
+const DeckModel = mongoose.model('Deck', DeckSchema);
+export default DeckModel

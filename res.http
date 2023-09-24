@@ -1,0 +1,16 @@
+### get request
+GET http://localhost:5000/decks HTTP/1.1
+
+
+###post req
+POST http://localhost:5000/decks 
+
+###delete req
+DELETE http://localhost:5000/decks/65033210f1d259efe47ad6a5
+
+### get request
+POST http://localhost:5000/decks/650306ef73a134d4e8c0ae6d/cards HTTP/1.1
+
+{
+    "text":"what is up!! "
+}
